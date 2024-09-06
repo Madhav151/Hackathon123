@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="st.css">
+    <style>
+        /* Fullscreen sections */
+        .full-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Styling for Android mockups */
+        .mockup {
+            max-width: 400px;
+            border: 1px solid #ddd;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        /* Adding some padding for text */
+        .section-text {
+            padding-left: 60px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                AspireMap
+            </a>
+            <button class="btn btn-primary ms-auto" type="button" onclick="scrollToLastSection()">Team Mates</button>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+
+
+        <section class="full-section" id="section1">
+         
+        <div class="hero">
+            <img src="logo.jpg" alt="" class="img">
+            <span class="first">Refined Learning for Exceptional Minds</span>
+            <span class="second"
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae corporis, veniam pariatur dolorem totam architecto.</span>
+            <span class="third"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium!</span>
+            <span class="sih">Coming Soon in SIH</span>
+          </div>
+        </div>
+        </section>
+    
+
+        <!-- Section 1 -->
+
+        <section class="full-section" id="section1">
+            <div class="row w-100">
+                <div class="col-md-6 section-text d-inline-block align-items-center align">
+                    <img src="recommendation.jpg"alt="Android Mockup 1" class="mockup1" height="500">
+                </div>
+                <div class="col-md-6 section-text d-flex align-items-center">
+                    <h2 id="o">Career Recommendations</h2>
+                    <p id="a">Discover personalized career recommendations based on your qualifications and interests. Our app analyzes your profile and suggests career paths that align with your skills and aspirations.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section 2 -->
+        <section class="full-section" id="section2">
+            <div class="row w-100">
+              
+                <div class="col-md-6 section-text d-inline-block align-items-center align">
+                    <h2 id="t">Full Career Roadmap</h2>
+                    <p id="b">Get a comprehensive roadmap for the career path you choose. From the first step to achieving your dream job, the app provides a clear and detailed guide to help you succeed in your chosen field.</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="roadmap.jpg" alt="Android Mockup 2" class="mockup2"  height="500">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section 3 -->
+        <section class="full-section" id="section3">
+            <div class="row w-100">
+                <div class="col-md-6 section-text d-inline-block align-items-center align">
+                    <img src="chatbot.jpg" alt="Android Mockup 3" class="mockup3"  height="500">
+                </div>
+                <div class="col-md-6 section-text d-flex align-items-center">
+                    <h2 id="th">AI Career Chatbot</h2>
+                    <p id="c">Have career-related questions? Our AI chatbot is here to assist! Ask it anything about career options, educational paths, or skill development, and get instant, insightful answers.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section 4 -->
+        <section class="full-section" id="section4">
+            <div class="row w-100">
+
+                <div class="col-md-6 section-text d-inline-block align-items-center align"></div>
+                    <h2 id="f"> Home Screen</h2>
+                    <p id="d">Navigate seamlessly through your career journey. The home screen provides easy access to all features, ensuring a user-friendly experience that puts your career growth at your fingertips.</p>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="1.jpg" alt="Android Mockup 4" class="mockup4"  height="500">
+                </div>
+              
+            </div>
+        </section>
+
+        <!--Section 5-->
+        <section class=" full-section teamMates" id="section5">
+            <div class="row w-100">
+
+                <div class="col-md-6 section-text d-inline-block align-items-center align"></div>
+                    <h2 id="salutation">Team Members:</h2>
+                    <ul>
+                        <li>Team Leader:Madhav</li>
+                        <li>Team Member:Bhoomi</li>
+                        <li>Team Member:Himani</li>
+                        <li>Team Member:Shreya</li>
+                        <li>Team Member:</li>
+                        <li>Team Member:</li>
+                    </ul>
+            </div>
+        </section>
+    </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      function scrollToLastSection(){
+        const lastSection=document.getElementById('section5');
+        lastSection.scrollIntoView({behavior:'smooth'});
+      }
+    </script>
+</body>
+</html>
